@@ -28,6 +28,10 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
+| Applications |
+|--------------|
+|![Test App](https://images.weserv.nl/?url=raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/generic-app-icon.png&w=50) [Test App](https://github.com/jlesage/docker-templates)|
+
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jlesage/docker-apps/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
