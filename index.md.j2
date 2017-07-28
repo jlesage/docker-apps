@@ -18,7 +18,7 @@ mobile-friendly.
 {% for item in apps.name %}
 {% set sysname = item|lower|replace(' ', '-') %}
     <tr><td>
-      <img style="vertical-align:middle" src="https://images.weserv.nl/?url=raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/{{ sysname }}-icon.png&amp;w=50" alt="{{ item }}"> <a href="https://github.com/jlesage/docker-{{ sysname }}">{{ item }}</a>
+      <img style="vertical-align:middle" src="https://images.weserv.nl/?url=raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/{{ sysname }}-icon.png&amp;w=50" alt="{{ item }}"> <a href="https://github.com/jlesage/docker-{{ sysname }}/blob/master/README.md">{{ item }}</a>
     </td></tr>
 {% endfor %}
   </tbody>
