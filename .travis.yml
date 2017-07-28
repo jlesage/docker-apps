@@ -1,0 +1,22 @@
+#
+# Travis CI recipe to build, test and push docker images to the Docker Hub.
+#
+
+sudo: required
+
+language: generic
+
+services:
+  - docker
+
+script:
+  - bash -e .travis.script
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  target_branch: master
+  name: Travis CI Deployment Bot
+  on:
+    branch: master

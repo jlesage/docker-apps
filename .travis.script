@@ -1,0 +1,30 @@
+#!/bin/sh
+
+set -e # Exit immediately if a command exits with a non-zero status.
+set -u # Treat unset variables as an error.
+
+TMPDIR="$(mktemp -d)"
+
+echo "Fetching repositories..."
+REPOS=$(curl -s -f https://api.github.com/users/jlesage/repos | grep '"name"' | grep 'docker-' | cut -d':' -f2 | tr -d '", ')
+
+echo "<apps>" >> "$TMPDIR"/template-data.xml
+for REPO in $REPOS; do
+    echo "Fetching appdefs.xml from jlesage.$REPO..."
+    curl -s -o "$TMPDIR"/$REPO.appdefs.xml https://raw.githubusercontent.com/jlesage/$REPO/master/appdefs.xml
+    NAME="$(cat "$TMPDIR"/$REPO.appdefs.xml | sed -n 's|.*<friendly_name>\(.*\)</friendly_name>|\1|p')"
+    if [ -z "$NAME" ]; then
+        echo "  -> File not found.  Skipping."
+        continue
+    fi
+    echo "  <name>$NAME</name>" >> "$TMPDIR"/template-data.xml
+done
+echo "</apps>" >> "$TMPDIR"/template-data.xml
+
+echo "Rendering index.md..."
+curl -s https://raw.githubusercontent.com/jlesage/docker-render-template/master/render_template.sh | sh -s \
+    index.md.j2 \
+    "$TMPDIR"/template-data.xml \
+    > index.md
+
+rm -r "$TMPDIR"
