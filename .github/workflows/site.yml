@@ -1,0 +1,28 @@
+name: Build and Deploy Site
+on:
+  push:
+    branches: master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Build Site Data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir _data
+          ./build-site-data.sh _data/apps.yml
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages     # The branch the action should deploy to.
+          FOLDER: .            # The folder the action should deploy.
+          CLEAN: true          # Automatically remove deleted files from the deploy branch.
+          SINGLE_COMMIT: true
