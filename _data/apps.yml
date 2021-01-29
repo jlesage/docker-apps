@@ -1,0 +1,41 @@
+
+- name: avidemux
+  friendlyName: Avidemux
+- name: cloudberry-backup
+  friendlyName: CloudBerry Backup
+- name: crashplan
+  friendlyName: CrashPlan
+- name: crashplan-enterprise
+  friendlyName: CrashPlan Enterprise
+- name: crashplan-pro
+  friendlyName: CrashPlan PRO
+- name: czkawka
+  friendlyName: Czkawka
+- name: dupeguru
+  friendlyName: dupeGuru
+- name: filebot
+  friendlyName: FileBot
+- name: filezilla
+  friendlyName: FileZilla
+- name: firefox
+  friendlyName: Firefox
+- name: handbrake
+  friendlyName: HandBrake
+- name: jdownloader-2
+  friendlyName: JDownloader 2
+- name: makemkv
+  friendlyName: MakeMKV
+- name: mediainfo
+  friendlyName: MediaInfo
+- name: mkvcleaver
+  friendlyName: MKVCleaver
+- name: mkvtoolnix
+  friendlyName: MKVToolNix
+- name: nginx-proxy-manager
+  friendlyName: Nginx Proxy Manager
+- name: putty
+  friendlyName: PuTTY
+- name: qdirstat
+  friendlyName: QDirStat
+- name: tsmuxer
+  friendlyName: tsMuxeR
