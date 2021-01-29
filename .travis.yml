@@ -10,7 +10,8 @@ services:
   - docker
 
 script:
-  - bash -e .travis.script
+  - mkdir _data
+  - ./build-site-data.sh _data/apps.yml
 
 deploy:
   provider: pages

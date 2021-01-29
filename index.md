@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Welcome!
 
 This page list Docker containers I've created to run some popular applications.
@@ -15,10 +19,9 @@ mobile-friendly.
 
 <table>
   <tbody>
-{% for item in apps.name %}
-{% set sysname = item|lower|replace(' ', '-') %}
+{% for item in site.data.apps %}
     <tr><td>
-      <img style="vertical-align:middle" src="https://images.weserv.nl/?url=raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/{{ sysname }}-icon.png&amp;w=50" alt="{{ item }}"> <a href="https://github.com/jlesage/docker-{{ sysname }}/blob/master/README.md">{{ item }}</a>
+      <img style="vertical-align:middle" src="https://images.weserv.nl/?url=raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/{{ item.name }}-icon.png&amp;w=50" alt="{{ item.friendlyName }}"> <a href="https://github.com/jlesage/docker-{{ item.name }}/blob/master/README.md">{{ item.friendlyName }}</a>
     </td></tr>
 {% endfor %}
   </tbody>
