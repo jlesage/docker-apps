@@ -29,8 +29,8 @@ mobile-friendly.
 
 ## Requests
 
-Want a dockerized version of an application?  Add or vote for your favorite
-application on [FeatHub](http://feathub.com/jlesage/docker-apps)!
+Want a dockerized version of an application?  Add your suggestion by creating
+an issue at https://github.com/jlesage/docker-apps/issues.
 
 ## Support or Contact
 
