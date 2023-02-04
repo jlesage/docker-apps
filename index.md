@@ -30,7 +30,7 @@ mobile-friendly.
 ## Requests
 
 Want a dockerized version of an application?  Add your suggestion by creating
-an issue at https://github.com/jlesage/docker-apps/issues.
+an issue at [https://github.com/jlesage/docker-apps/issues](https://github.com/jlesage/docker-apps/issues).
 
 ## Support or Contact
 
