@@ -18,9 +18,9 @@ fi
 
 echo "Fetching repositories..."
 if [ "${GITHUB_TOKEN:-UNSET}" = "UNSET" ]; then
-    REPOS=$(curl -s -f https://api.github.com/users/jlesage/repos?per_page=1000 | grep '"name"' | grep 'docker-' | cut -d':' -f2 | tr -d '", ')
+    REPOS=$(curl -s -f https://api.github.com/users/jlesage/repos?per_page=1000 | jq -r '.[] | select(.name|startswith("docker-")) | select(.archived == false and .fork == false).name')
 else
-    REPOS=$(curl -H "Authorization: token $GITHUB_TOKEN" -s -f https://api.github.com/users/jlesage/repos?per_page=1000 | grep '"name"' | grep 'docker-' | cut -d':' -f2 | tr -d '", ')
+    REPOS=$(curl -H "Authorization: token $GITHUB_TOKEN" -s -f https://api.github.com/users/jlesage/repos?per_page=1000 | jq -r '.[] | select(.name|startswith("docker-")) | select(.archived == false and .fork == false).name')
 fi
 if [ "${REPOS:-UNSET}" = "UNSET" ]; then
     echo "ERROR: No repository found."
