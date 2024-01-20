@@ -1,0 +1,53 @@
+
+- name: avidemux
+  friendlyName: Avidemux
+- name: cloudberry-backup
+  friendlyName: MSP360 Backup
+- name: crashplan-enterprise
+  friendlyName: CrashPlan Enterprise
+- name: crashplan-pro
+  friendlyName: CrashPlan
+- name: czkawka
+  friendlyName: Czkawka
+- name: dupeguru
+  friendlyName: dupeGuru
+- name: filebot
+  friendlyName: FileBot
+- name: filezilla
+  friendlyName: FileZilla
+- name: firefox
+  friendlyName: Firefox
+- name: firefox-esr
+  friendlyName: Firefox ESR
+- name: freefilesync
+  friendlyName: FreeFileSync
+- name: handbrake
+  friendlyName: HandBrake
+- name: jdownloader-2
+  friendlyName: JDownloader 2
+- name: jmkvpropedit
+  friendlyName: JMkvpropedit
+- name: makemkv
+  friendlyName: MakeMKV
+- name: mediainfo
+  friendlyName: MediaInfo
+- name: mkv-muxing-batch-gui
+  friendlyName: MKV Muxing Batch GUI
+- name: mkvcleaver
+  friendlyName: MKVCleaver
+- name: mkvtoolnix
+  friendlyName: MKVToolNix
+- name: nginx-proxy-manager
+  friendlyName: Nginx Proxy Manager
+- name: putty
+  friendlyName: PuTTY
+- name: qdirstat
+  friendlyName: QDirStat
+- name: thunderbird
+  friendlyName: Thunderbird
+- name: tixati
+  friendlyName: Tixati
+- name: tsmuxer
+  friendlyName: tsMuxeR
+- name: video-duplicate-finder
+  friendlyName: Video Duplicate Finder
