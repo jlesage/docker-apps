@@ -1,0 +1,85 @@
+
+- name: audacious
+  friendlyName: Audacious
+- name: audacity
+  friendlyName: Audacity
+- name: avidemux
+  friendlyName: Avidemux
+- name: chromium
+  friendlyName: Chromium
+- name: cloudberry-backup
+  friendlyName: MSP360 Backup
+- name: crashplan-enterprise
+  friendlyName: CrashPlan Enterprise
+- name: crashplan-pro
+  friendlyName: CrashPlan
+- name: czkawka
+  friendlyName: Czkawka
+- name: dupeguru
+  friendlyName: dupeGuru
+- name: file-centipede
+  friendlyName: File Centipede
+- name: filebot
+  friendlyName: FileBot
+- name: filezilla
+  friendlyName: FileZilla
+- name: firefox
+  friendlyName: Firefox
+- name: firefox-esr
+  friendlyName: Firefox ESR
+- name: freac
+  friendlyName: fre:ac
+- name: freefilesync
+  friendlyName: FreeFileSync
+- name: handbrake
+  friendlyName: HandBrake
+- name: imgburn
+  friendlyName: ImgBurn
+- name: jdownloader-2
+  friendlyName: JDownloader 2
+- name: jmkvpropedit
+  friendlyName: JMkvpropedit
+- name: keepassxc
+  friendlyName: KeePassXC
+- name: krokiet
+  friendlyName: Krokiet
+- name: krusader
+  friendlyName: Krusader
+- name: makemkv
+  friendlyName: MakeMKV
+- name: mediainfo
+  friendlyName: MediaInfo
+- name: mkv-muxing-batch-gui
+  friendlyName: MKV Muxing Batch GUI
+- name: mkvcleaver
+  friendlyName: MKVCleaver
+- name: mkvtoolnix
+  friendlyName: MKVToolNix
+- name: musicbrainz-picard
+  friendlyName: MusicBrainz Picard
+- name: nginx-proxy-manager
+  friendlyName: Nginx Proxy Manager
+- name: puddletag
+  friendlyName: puddletag
+- name: putty
+  friendlyName: PuTTY
+- name: qdirstat
+  friendlyName: QDirStat
+- name: sharry
+  friendlyName: Sharry
+- name: thunderbird
+  friendlyName: Thunderbird
+- name: tinymediamanager
+  friendlyName: tinyMediaManager
+- name: tixati
+  friendlyName: Tixati
+- name: tsmuxer
+  friendlyName: tsMuxeR
+- name: video-duplicate-finder
+  friendlyName: Video Duplicate Finder
+- name: vlc
+  friendlyName: VLC
+- name: xfburn
+  friendlyName: Xfburn
+- name: xnview-mp
+  friendlyName: XnView MP
